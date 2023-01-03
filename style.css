@@ -1,0 +1,43 @@
+/* html {
+  --roxo: #84e;
+  color: var(--roxo);
+}
+
+h1 {
+  --roxo: #84e;
+  color: var(--roxo);
+} */
+
+/* nesse exemplo não faria sentido usar uma variável pois o h1 não tem nenhum elemento que herde suas caracteristicas, então as variáveis geralmente são usadas em elementos pai de vários outros, como por exemplo uma tag html ou div */
+
+/* :root {
+  --cor-fundo: #fff;
+  --texto1: #111;
+  --texto2: #444;
+} */
+/* basicamente como visto acima, defina as variáveis dentro do :root e utilize quando necessários nas tags em que você deseja aplicar a cor definida. */
+body {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-fundo);
+}
+h1 {
+  color: var(--texto1);
+}
+p {
+  color: var(--texto2);
+}
+:root {
+  --cor-fundo: #fff;
+  --texto1: #111;
+  --texto2: #444;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #222;
+    --texto1: #eee;
+    --texto2: #bbb;
+  }
+}
+
+/* por preferência deixe o modo padrão do seu site no root, e aplique apenas o @media no modo em que você deseja que seja o secundário do seu site, por exemplo, se seu site é claro por padrão deixe o modo escuro no @media. */
