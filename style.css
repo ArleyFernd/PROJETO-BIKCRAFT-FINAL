@@ -1,43 +1,74 @@
-/* html {
-  --roxo: #84e;
-  color: var(--roxo);
-}
-
-h1 {
-  --roxo: #84e;
-  color: var(--roxo);
-} */
-
-/* nesse exemplo não faria sentido usar uma variável pois o h1 não tem nenhum elemento que herde suas caracteristicas, então as variáveis geralmente são usadas em elementos pai de vários outros, como por exemplo uma tag html ou div */
-
-/* :root {
-  --cor-fundo: #fff;
-  --texto1: #111;
-  --texto2: #444;
-} */
-/* basicamente como visto acima, defina as variáveis dentro do :root e utilize quando necessários nas tags em que você deseja aplicar a cor definida. */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--cor-fundo);
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
 }
-h1 {
-  color: var(--texto1);
+ul a {
+  text-decoration: none;
 }
-p {
-  color: var(--texto2);
+.header-bg {
+  background: #000000;
 }
-:root {
-  --cor-fundo: #fff;
-  --texto1: #111;
-  --texto2: #444;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cor-fundo: #222;
-    --texto1: #eee;
-    --texto2: #bbb;
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.header-menu a {
+  color: #ffffff;
+  padding: 16px 0px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+.header-menu a:after {
+  content: "";
+  display: block;
+  padding-bottom: 0px;
+  background: #ffffff;
+  width: 0px;
+  height: 4px;
+  position: absolute;
+  margin-top: 4px;
+}
+.header-menu a:hover:after {
+  width: 100%;
+  transition: 0.4s;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background: #111111;
+    padding: 12px 20px;
+    border-radius: 5px;
+  }
+  .header a::after {
+    display: none;
   }
 }
-
-/* por preferência deixe o modo padrão do seu site no root, e aplique apenas o @media no modo em que você deseja que seja o secundário do seu site, por exemplo, se seu site é claro por padrão deixe o modo escuro no @media. */
+@media (max-width: 500px) {
+  .header-menu a {
+    font-size: 14px;
+    padding: 8px 16px;
+    gap: 12px;
+  }
+}
