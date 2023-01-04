@@ -1,5 +1,5 @@
 .header-bg {
-  background: #000000;
+  background: var(--cor-12);
 }
 
 .header {
@@ -21,7 +21,6 @@
   gap: 40px;
 }
 .header-menu a {
-  color: #ffffff;
   padding: 16px 0px;
   display: inline-block;
   font-size: 18px;
@@ -32,7 +31,7 @@
   content: "";
   display: block;
   padding-bottom: 0px;
-  background: #ffffff;
+  background: var(--cor-0);
   width: 0px;
   height: 4px;
   position: absolute;
@@ -49,7 +48,7 @@
     gap: 20px;
   }
   .header-menu a {
-    background: #111111;
+    background: var(--cor-11);
     padding: 12px 20px;
     border-radius: 5px;
   }
