@@ -12,3 +12,5 @@
 @import "../../css/componentes/componentes.css";
 /* listas de bicicletas */
 @import "../../css/bicicletas/bicicletas-lista.css";
+/* tecnologia */
+@import "../tecnologia/tecnologia.css";
