@@ -1,19 +1,27 @@
 /* estilos globais */
 @import "./global.css";
+
 /* tipografia */
 @import "../../css/componentes/tipografia.css";
+
 /* cores */
 @import "../../css/componentes/cores.css";
 
+/* Header */
 @import "../header/header.css";
+
+/* Introdução */
 @import "../home/introdução.css";
 
 /* componentes */
 @import "../../css/componentes/componentes.css";
+
 /* listas de bicicletas */
 @import "../../css/bicicletas/bicicletas-lista.css";
+
 /* tecnologia */
 @import "../home/tecnologia.css";
+
 /* Parceiros */
 @import "../home/parceiros.css";
 
@@ -22,3 +30,6 @@
 
 /* Seguros */
 @import "../seguros/seguros.css";
+
+/* Footer */
+@import "../global/footer.css";
