@@ -33,3 +33,9 @@
 
 /* Footer */
 @import "../global/footer.css";
+
+/* Termos */
+@import "../../css/termos/termos.css";
+
+/* Bicicicletas */
+@import "../../css/bicicletas/bicicletas.css";
