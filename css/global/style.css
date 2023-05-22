@@ -30,8 +30,10 @@
 
 /* Seguros */
 @import "../seguros/seguros.css";
+@import "../bicicleta/seguro.css";
 
 /* Footer */
+
 @import "../global/footer.css";
 
 /* Termos */
@@ -43,3 +45,13 @@
 
 /* seguros */
 @import "../seguros/seguros-page.css";
+
+/* Contatos */
+@import "../contato/contato.css";
+
+/* Formulários */
+@import "../componentes/formulario.css"
+
+/* Contatos */
+@import "../contato/contatos.css";
+@import "../contato/lojas.css";
